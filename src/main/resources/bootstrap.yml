@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: ToDoEurekaUserService
+  cloud:
+    config:
+      uri: http://localhost:8088
+      discovery:
+        service-id: ToDoConfigServer
+        
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
